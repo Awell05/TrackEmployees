@@ -16,17 +16,17 @@ VALUES
 ("Legal Team Lead", 250000, 3),
 ("Lawyer", 190000, 3);
 
-INSERT INTO employee ( first_name, last_name, role_id)
+INSERT INTO employee ( first_name, last_name, role_id, manager_id)
 VALUES
-("Jill", "Scott", 1 ),
-("Beyonce", "Knowles", 7),
-("Ari", "Lennox", 6),
-("Anita", "Baker", 3),
-("Bryson", "Tiller", 4),
-("Toni", "Braxton", 8),
-("Aubrey", "Graham", 5 ),
-("Jazmine", "Sullivan", 6),
-("Kendrick", "Lamar", 2);
+("Jill", "Scott", 1, 1 ),
+("Beyonce", "Knowles", 7, 3),
+("Ari", "Lennox", 6, 4, 2),
+("Anita", "Baker", 3, 2),
+("Bryson", "Tiller", 4, 4),
+("Toni", "Braxton", 8, 6),
+("Aubrey", "Graham", 5, 6 ),
+("Jazmine", "Sullivan", 6, 3),
+("Kendrick", "Lamar", 2, 8);
 
 
 SELECT * FROM department;
