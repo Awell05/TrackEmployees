@@ -15,14 +15,6 @@ const db = mysql.createConnection(
     },
     console.log(`Connected to the cms_db database.`)
   );
-  
-  // Query database
-//   db.query('SELECT * FROM department', function (err, results) {
-//     console.log(results);
-//     const table = cTable.getTable(results);
-//     console.log(table);
-//   });
-
 
 inquirer.prompt(initialQs).then((answer) => {
     // console.log(answer);
@@ -60,19 +52,3 @@ inquirer.prompt(initialQs).then((answer) => {
             ).catch((err) => {
                     console.log(err);
             });
-
-
-//         case "Add a Department":
-//             addDepartment()
-//             break;
-//         case "Add a Role":
-//             addRole()
-//             break;
-//         case "Add an Employee":
-//             addEmployee()
-//             break;
-//     }
-// }).catch((err) => {
-//     console.log(err)
-// });
-
